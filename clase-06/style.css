@@ -1,0 +1,162 @@
+.primer-boton {
+    background-color: brown;
+    color: white;
+    border: 1px solid;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.primer-boton:hover {
+    color: brown;
+    border: 1px solid brown;
+    background-color: white;
+}
+
+.primer-boton:focus {
+    background-color: green;
+}
+
+.primer-boton:active {
+    background-color: aqua;
+}
+
+h3 {
+    text-transform: uppercase;
+}
+
+h3:hover {
+    color: white;
+    background-color: brown;
+}
+
+
+input:focus {
+    background-color: blueviolet;
+    color: white;
+}
+
+.lista li:nth-last-child(2n){
+    color: brown;
+}
+
+.titulo-principal::before {
+    content: "🥳 ";
+}
+
+.titulo-principal::after {
+    content: " - PATO 🦆";
+    color: green;
+}
+
+
+
+.contenedor-parrafos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    transition: color 0.5s ease;
+
+    &:hover{
+        color: white;
+    }
+}
+
+.parrafo-main::first-letter {
+    font-size: 2rem;
+}
+
+.parrafo-segundo::first-line {
+    color: green;
+}
+
+.parrafo-segundo::first-letter {
+    font-size: 2rem;
+}
+
+.checkbox-1::after {
+    content: " hola";
+    color: red;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+.btn-main {
+    padding: 10px;
+    border-radius: 25px;
+    border: 1.5px solid coral;
+    cursor: pointer;
+    background-color: coral;
+    color: white;
+    margin-left: 15px;
+    /* propiedad - duracion - funcion - delay */
+    transition: all 0.5s ease 0s;
+
+    /* derecha - izquierda y arriba - abajo */
+    /* margin: 10px 150px; */
+
+    /* top right bottom left  */
+    /* margin: 100px 20px 30px 40px ; */
+
+    &:hover{ 
+        background-color: white;
+        color: coral;
+        transform: scale(1.2);
+    }
+}
+
+
+.cuadradito {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    margin: 10px;
+    color: white;
+    animation: mover 2s infinite alternate ease-out;
+}
+
+.contenedor-cuadraditos .cuadradito:nth-child(1){
+    animation-timing-function: ease;
+}
+.contenedor-cuadraditos .cuadradito:nth-child(2){
+    animation-timing-function: ease-in;
+}
+.contenedor-cuadraditos .cuadradito:nth-child(3){
+    animation-timing-function: linear;
+}
+.contenedor-cuadraditos .cuadradito:nth-child(4){
+    animation-timing-function: ease-out;
+}
+.contenedor-cuadraditos .cuadradito:nth-child(4){
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes mover {
+    from {
+        transform: translate(0, 0);
+
+    }
+    to{
+        transform: translate(400px, 0) scale(2);
+        background-color: pink;
+        border: 1px solid black;
+    }
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0) translate(0, 0)
+    }
+
+    50% {
+        transform: rotate(-360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
