@@ -1,0 +1,28 @@
+.mi-boton {
+    color: rgb(0, 255, 128);
+}
+
+.mi-carrousel {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 50px;
+    padding: 50px;
+    min-height: 600px;
+}
+
+.titulo-centrado {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#imagen-donde-nos-encontramos{
+    height: 250px;
+}
+
