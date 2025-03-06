@@ -1,5 +1,23 @@
+/* Botones */
 .mi-boton {
     color: rgb(0, 255, 128);
+}
+
+/* Titulos */
+.titulo-centrado {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#imagen-donde-nos-encontramos{
+    height: 250px;
+}
+
+/* Contenedores */
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .mi-carrousel {
@@ -11,18 +29,7 @@
     min-height: 600px;
 }
 
-.titulo-centrado {
-    text-align: center;
-    margin-top: 35px;
+.mapa {
+    width: 100%;
+    height: 300px;
 }
-
-.contenedor-tarjetas {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-#imagen-donde-nos-encontramos{
-    height: 250px;
-}
-
