@@ -1,64 +1,104 @@
-// Modulo
-let resto = 12 % 3
+// Verdadero = true
+// False = false
 
-// Suma
-let suma = 5 + 3
+// typeof nos sirve para ver/obtener el tipo de dato
 
-// Resta 
-let resta = 5 - 3
+// console.log(typeof true)
+// console.log(typeof "cadena de texto")
+// console.log(typeof 2)
 
-// Multiplicacion
-let multiplicacion = 5 * 5
+// Condicionales
+if (false) {
+    console.log("La condicion es verdadera")
+}
 
-// Division
-let division = 5 / 5
+// Else de un condicional
+let estaLloviendo = false;
 
-////////////////////////////
+// if (estaLloviendo) {
+//     console.log("Esta lloviendo, voy a llevar un paraguas.")
+// } else {
+//     console.log("No esta lloviendo. Puedo irme sin paraguas.")
+// }
 
-let num1 = 5
-let num2 = 8
+// Operadores de Comparacion
+/*
+console.log(2 == "2") // Igualdad
+console.log(2 === "2") // Igualdad estricta
+console.log(2 != "2") // Desigualdad
+console.log(2 !== "2") // Desigualdad estricta
+console.log(2 > 5) // Mayor que
+console.log(2 < 5) // Mayor que
+console.log(5 <= 5) // Menor o igual
+console.log(4 >= 5) // Mayor o igual
+*/
 
-let resultado = num1 * num2 - 10
+let edad = 85;
+let sexo = "mujer"
+const dni = "40123456"
 
-////////////////////////////
+/*
+if (edad >= 21) {
+    console.log("Eres mayor. Puedes pasar")
 
-// Operadores
+    if(sexo === "mujer"){
+        console.log("Pasas graterola")
+    }else{
+        console.log("La entrada cuesta $5.00")
+    }
+} else if (edad < 10) {
+    console.log("Eres un niño! Voy a llamar a tu mama.")
+} else if (edad > 80) {
+    console.log("Eres muy viejo para entrar!")
+} else {
+    console.log("Eres menor. No puedes pasar")
+}
+*/
 
-// Asignacion "="
-let num3 = 35
+// Operadores Logicos
+const validacion = 5 === 6
+const validacion2 = 12 < 20
 
-// Asignacion con suma "+="
-num3 += 2
+// console.log(validacion && validacion2) // AND
+// console.log(validacion || validacion2) // OR
 
-// Asignacion con resta "-="
-num3 -= 1
+let costoEntrada = 20
+let plataEnBilletera = 10
+let hijoDelDuenio = true
 
-//////////////////////////////
+/*
+if (costoEntrada <= plataEnBilletera || hijoDelDuenio) {
+    console.log("Pagaste la entrada. Puedes entrar")
+}else{
+    console.log("No te alcanza el dinero para entrar")
+}
+*/
 
-let nombre = "Pepe"
-let apellido = "Argento"
+// Switch
+const dia = "Martes"
 
-// camelCase
-let nombreCompleto =  nombre + " " + apellido
+switch (dia) {
+    case "Lunes":
+        console.log("Comienzo de semana")
+        break;
+    case "Domingo":
+        console.log("Final de la semana")
+        break;
+    default:
+        console.log("Estas en otro dia")
+        break;
+}
+
+// parseInt
+const numero = "55"
+const numero2 = 5
+
+console.log(parseInt(numero) + numero2)
 
 
-// Funciones
-
-// Alerta
-alert(nombreCompleto)
-
-// Console Log
-console.log(nombreCompleto)
-
-// Prompt
-let edad = prompt("Decime tu edad")
-let name = prompt("Decime tu nombre")
-
-console.log("Soy " + name + " y tengo " + edad + " años.")
 
 
-// Palabras reservadas para la declaracion de variables
-var variable2 = "asd" // No recomendado
-let variable = "asd" 
-const variable3 = "asd"
+
+
+
 
