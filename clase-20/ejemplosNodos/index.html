@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ejemplo de Nodos</title>
+</head>
+<body>
+  <div id="miDiv">
+    Hola Mundo
+    <!-- Este es un comentario -->
+  </div>
+
+  <script>
+    const div = document.getElementById("miDiv");
+
+    div.childNodes.forEach(node => {
+      console.log("Contenido:", node.textContent.trim());
+      console.log("Tipo de nodo:", node.nodeType);
+
+      switch (node.nodeType) {
+        case Node.ELEMENT_NODE:
+          console.log("→ Es un ELEMENT_NODE (Etiqueta HTML)");
+          break;
+        case Node.TEXT_NODE:
+          console.log("→ Es un TEXT_NODE (Texto dentro del elemento)");
+          break;
+        case Node.COMMENT_NODE:
+          console.log("→ Es un COMMENT_NODE (Comentario)");
+          break;
+        default:
+          console.log("→ Otro tipo de nodo");
+      }
+
+      console.log("--------------------------");
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Lista de Tareas</h2>
+
+    <!-- Formulario para agregar tarea -->
+    <form id="formulario">
+        <input type="text" name="tarea" placeholder="Ingresa la tarea">
+        <input type="submit">
+    </form>
+    
+    <ol id="listaTareas">
+        <li>Sacar el Perro</li>
+    </ol>
+</body>
+</html>
+
+<script src="tareas.js"></script>
+
+<style>
+    .botonEliminar{
+        border: 0px solid red;
+        background-color: white;
+        color: red;
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+</style>
