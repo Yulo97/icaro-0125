@@ -41,12 +41,6 @@
   color: #888;
 }
 
-span {
+.tituloSecundario {
   color: red;
-  font-size: x-small;
-}
-
-label,
-input {
-  display: block;
 }

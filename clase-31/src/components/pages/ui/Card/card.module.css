@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid white;
+  padding: 25px;
+  margin: 40px;
+}
+
+.titulo {
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
