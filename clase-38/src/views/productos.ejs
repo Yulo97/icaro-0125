@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="public/style.css" />
+  </head>
+  <body>
+    <%- include('partials/header.ejs') %> <% productos.forEach(function(item) {
+    %>
+    <div class="contenedor">
+      <h2><%- item.producto %></h2>
+      <h3><%- item.precio %></h3>
+      <p><%- item.detalle %></p>
+      <a href="/productos/<%= item.id %>">Ver producto</a>
+    </div>
+    <% }) %>
+  </body>
+</html>
