@@ -1,0 +1,19 @@
+.login_card {
+  h2 {
+    text-align: center;
+  }
+
+  border: 1px solid black;
+  padding: 25px;
+  margin: 50px;
+  border-radius: 8px;
+  form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    input {
+      margin: 5px;
+    }
+  }
+}
