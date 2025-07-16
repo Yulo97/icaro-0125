@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="formulario">
+      <input type="text" name="username" placeholder="Usuario" />
+      <input type="text" name="password" placeholder="Contraseña" />
+      <input type="submit" value="Ingresar" />
+    </form>
+
+    <button id="btn-usuarios">OBTENER USUARIOS</button>
+  </body>
+</html>
+
+<script>
+  const formulario = document.getElementById("formulario");
+  const btnUsuarios = document.getElementById("btn-usuarios");
+
+  formulario.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    console.log(formulario.username.value);
+
+    const response = await fetch("/auth/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        username: formulario.username.value,
+        password: formulario.password.value,
+      }),
+    });
+    const data = await response.json();
+
+    console.log(data);
+
+    localStorage.setItem("Authorization", data.token);
+  });
+
+  btnUsuarios.addEventListener("click", async () => {
+    const response = await fetch("/usuarios", {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${localStorage.getItem("Authorization")}`,
+      },
+    });
+
+    const data = await response.json();
+
+    console.log(data);
+  });
+</script>
