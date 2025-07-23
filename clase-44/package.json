@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.2"
+  },
+  "name": "clase-44",
+  "version": "1.0.0",
+  "main": "index.js",
+  "prettier": {
+    "requireConfig": false
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

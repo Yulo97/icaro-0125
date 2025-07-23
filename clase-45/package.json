@@ -1,0 +1,22 @@
+{
+  "name": "clase-45",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "prettier": {
+    "requireConfig": false
+  },
+  "scripts": {
+    "dev": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.2",
+    "sequelize": "^6.37.7",
+    "sequelize-cli": "^6.6.3"
+  }
+}
